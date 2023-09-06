@@ -1,0 +1,102 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: Roboto, sans-serif;
+  background-color: rgb(17, 17, 17);
+  color: white;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pickmovie {
+  margin-bottom: 25px;
+}
+.pick {
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+.pickInput {
+  /* height: 22px; */
+  padding: 7px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+}
+.seatInfoCont {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(59, 50, 50);
+}
+.seatInfo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 10px;
+}
+.seat {
+  height: 18px;
+  width: 18px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: bisque;
+  cursor: pointer;
+}
+.seatSelected {
+  height: 18px;
+  width: 18px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  cursor: pointer;
+  background-color: aqua;
+}
+.Occupied {
+  height: 18px;
+  width: 18px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  cursor: pointer;
+  background-color: wheat;
+}
+.seatDesc {
+  color: rgb(195 176 176);
+}
+.screenContainer {
+  perspective: 1000px;
+  margin-bottom: 30px;
+}
+.screen {
+  height: 70px;
+  width: 100%;
+  margin: 35px 0;
+  background-color: white;
+  transform: rotateX('-45deg');
+  box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
+}
+.seatCont {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  width: 100%;
+  
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+.seat:nth-of-type(2) {
+  margin-right: 20px;
+}
+.seat:nth-last-child(2) {
+  margin-left: 20px;
+}
+.price{
+    margin-top: 18px;;
+}
